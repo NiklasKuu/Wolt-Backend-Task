@@ -37,7 +37,7 @@ _Shell prompt should change to the name of the activated environment_
 
 Install dependencies:
 ```bash
-$ pip install Flask, haversine, pytest
+$ pip install Flask haversine pytest
 ```
 Run tests with:
 ```bash
