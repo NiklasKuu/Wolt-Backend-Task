@@ -5,6 +5,8 @@ from flask import Flask, jsonify, make_response, request
 
 app = Flask(__name__)
 
+
+
 @app.route('/restaurants/search', methods=['GET'])
 def restaurant_search():
     """Returns a list of restaurants whose name, description and/or tags match the query_string
@@ -71,4 +73,4 @@ def isfloat(value):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0")

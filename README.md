@@ -51,6 +51,14 @@ On Windows:
 ```bash
 $ py api.py
 ```
+Run in Docker container:
+```bash
+$ docker build -t wolt_backend_task .
+```
+```bash
+$ docker run -p 5000:5000 wolt_backend_task
+```
+
 The API is now running on http://127.0.0.1:5000/
 Test on a browser or on Postman with: http://127.0.0.1:5000/restaurants/search?q=a&lat=60.17045&lon=24.93147
 
